@@ -47,7 +47,7 @@ Runtime options heavily affect TensorFlow performance. Understanding them will h
   <br>
   For example, here is how you can set the inter and intra_op_num_threads by using <a href="[https://www.runoob.com](https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks)">TensorFlow Benchmark</a>.tf_cnn_benchmarks usage (shell)
   <br>
-  <pre>python tf_cnn_benchmarks.py --num_intra_threads=<number of physical cores per socket> --num_inter_threads=<number of sockets></pre>
+  <pre>python tf_cnn_benchmarks.py --num_intra_threads=&lt;number of physical cores per socket&gt; --num_inter_threads=&lt;number of sockets&gt;</pre>
   <b>intra_op_parallelism_threads</b> and <b>inter_op_parallelism_threads</b> are runtime variables defined in TensorFlow.
   <br><br>
   <b>ConfigProto</b>
@@ -71,7 +71,7 @@ Runtime options heavily affect TensorFlow performance. Understanding them will h
 <br>
 tf_cnn_benchmarks usage (shell)
 <br>
-<pre>python tf_cnn_benchmarks.py --num_intra_threads=<number of physical cores per socket> --num_inter_threads=<number of sockets> --data_format=NHWC</pre>
+<pre>python tf_cnn_benchmarks.py --num_intra_threads=&lt;number of physical cores per socket&gt; --num_inter_threads=&lt;number of sockets&gt; --data_format=NHWC</pre>
 <br>
 Efficiently using cache and memory yields remarkable improvements in overall performance. A good memory access pattern minimizes extra cost for accessing data in memory and improves overall processing. Data layout, how data is stored and accessed, plays an important role in achieving these good memory access patterns. Data layout describes how multidimensional arrays are stored linearly in memory address space.
 
