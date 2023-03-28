@@ -163,7 +163,7 @@ Usage (shell)
 </details>
 
 ## OpenMP Technical Performance Considerations for Intel® Optimization for TensorFlow
-> This section is only for Intel® Optimization for TensorFlow, and it does not apply to official TensorFlow release.  
+<b>Note: This section is only for Intel® Optimization for TensorFlow, and it does not apply to official TensorFlow release.</b>  
 <br>
 Intel® Optimization for TensorFlow utilizes OpenMP to parallelize deep learnng model execution among CPU cores.
 <br><br>
