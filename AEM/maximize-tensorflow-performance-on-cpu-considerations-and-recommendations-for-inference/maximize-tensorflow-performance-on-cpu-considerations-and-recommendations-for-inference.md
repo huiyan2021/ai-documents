@@ -111,7 +111,7 @@ Runtime options heavily affect TensorFlow performance. Understanding them will h
   | TF\_ONEDNN\_USE\_SYSTEM\_ALLOCATOR | False | Use system allocator or BFC allocator in MklCPUAllocator.<br>Usage:<br><li>Set it to true for better performance if the workload meets one of following conditions:</li><ul><li>small allocation.</li><li>inter\_op\_parallelism\_threads is large.</li><li>has a weight sharing session</li></ul><li>Set it to False to use large-size allocator (BFC).</li>In general, set this flag to True for inference, and set this flag to False for training. |
   | TF\_MKL\_ALLOC\_MAX\_BYTES | 64 | MklCPUAllocator: Set upper bound on memory allocation. Unit:GB|
   | TF\_MKL\_OPTIMIZE\_PRIMITIVE\_MEMUSE | True | Use oneDNN primitive caching or not.<li>Set False to enable primitive caching in TensorFlow.</li><li>Set True to disable primitive caching in TensorFlow and oneDNN might cache those primitives for TensorFlow.</li>Disabling primitive caching will reduce memory usage in TensorFlow but impacts performance.|
-  <br>
+  
 </details>
 
 <details>
