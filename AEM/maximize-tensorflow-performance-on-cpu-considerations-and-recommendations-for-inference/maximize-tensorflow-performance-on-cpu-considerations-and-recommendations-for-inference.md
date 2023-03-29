@@ -113,7 +113,7 @@ Runtime options heavily affect TensorFlow performance. Understanding them will h
   | TF\_MKL\_OPTIMIZE\_PRIMITIVE\_MEMUSE | True | Use oneDNN primitive caching or not.<li>Set False to enable primitive caching in TensorFlow.</li><li>Set True to disable primitive caching in TensorFlow and oneDNN might cache those primitives for TensorFlow.</li>Disabling primitive caching will reduce memory usage in TensorFlow but impacts performance.|
   <br>
 </details>
-<br>
+
 <details>
   <summary>Memory Allocator</summary>
   <br>
